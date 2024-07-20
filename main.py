@@ -1,4 +1,5 @@
 
+from dotenv import load_dotenv
 import openai
 # from app import assist
 # from app import thread_id
@@ -7,7 +8,7 @@ from create_assistant import createassis
 import streamlit as st
 
 
-
+load_dotenv()
 
 client = openai.OpenAI()
 
