@@ -2,3 +2,6 @@ python-dotenv
 openai
 streamlit
 python-dotenv
+streamlit-authenticator==0.1.5
+pickle
+pathlib 
