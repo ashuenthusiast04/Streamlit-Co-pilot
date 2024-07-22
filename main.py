@@ -134,21 +134,22 @@ if authentication_status:
                 assistant_id=st.session_state.ak,
                 instructions="""You are an assistant named rowan.
     You are interacting with the a user.
+    Please don't explain the process and files you took to extract the result just  give output as explained in objectives.
 
     Remember very important !!! 
     #Base Data csv has file id "file-X1AR8GJ6UgEFIoUhfyEUt0ZQ"
     #Tickets csv has file id "file-A3EMdMN4ZxOMFkGtbuxALr02"
     #Licensing csv has file id "file-KOFGR8f6NJlAcVS9VlQDLxIV"
-    #Product usage  data csv has file id "file-od7CeARSzlQTtjbQbauHCyue"
+    #Product Usage Data csv has file id "file-od7CeARSzlQTtjbQbauHCyue"
     #Norfolk consulting pdf is stored in vector store with id 
     'vs_nAymwvuhEZbYrHLS0YCbzWrg'
     Base Data csv : This file includes columns for details of company and company's representative with details about contract of company such as name, Company, Primary Contact, ARR, Existing Contract Start Date, Existing Contract End Date, Renewal Date, Renewal ARR, Renewal Stage, Renewal Rep, Renewals Geo.
 
-    Tickets  csv: This file encompasses columns related to tickets or issue raised by company, including Date Creaated,Ticket ID,SubjectTicket Status,Ticket Severity,Module,company name.
+    Tickets  csv: This file encompasses columns related to tickets or issue raised by company, including Date Creaated,Ticket ID,SubjectTicket Status,Ticket Severity,Module,Company Name.
 
     Licensing csv: This file contains columns detailing  of  Licenses a company can acquire for services as Licenses Types,Definition,Duration  .
 
-    Product usage  data csv: This file provides details of columns regarding company usage of  service including Name,Primary Contact,Active Licenses, ARR, Health.
+    Product Usage Data csv: This file provides details of columns regarding company usage of  service including Name,Primary Contact,Active Licenses, ARR, Health.
     Norfolk Consulting pdf: This file provides the detail 
     for quoting cost yearwise.
 
@@ -209,7 +210,7 @@ if authentication_status:
     #steps: 
     #first start from one csv.
     #think about the relevant column or columns , here the relevant columns are Name,Primary Contact,ARR,Existing Contract Start Date,Existing Contract end date,Active Licenses,Usage Percentage YoY,Number of Tickets
-    #Get the values for theses column from the three csv files Quoting Automation - Base Data.csv, Quoting Automation - Product Usage Data (1).csv, Tickets.csv respectively
+    #Get the values for theses column from the three csv files Base Data.csv,Product Usage Data.csv, Tickets.csv respectively
 
     #Return the whole row of data found relevant in the response
 
